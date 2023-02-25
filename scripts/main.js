@@ -1,43 +1,31 @@
 
 let runner = setInterval(function() {
 
-    // Remove Home Channel Subscriber Count
+    // Remove Subscriber Numbers
 
-    if (document.getElementById("subscriber-count") != null){
-        document.getElementById("subscriber-count").style.display = "none";
-    }
+    var myElements = [
+        document.getElementById("subscriber-count"),
+        document.getElementById("subscribers"),
+        document.getElementById("owner-sub-count"),
+        document.getElementById("dot"),
+        document.getElementById("thumbnail-attribution")
+    ]
 
-    // Remove Subscriber Count from Channels on Home Channel Page
+    for(var i = 0, size = myElements.length; i < size ; i++){
+        var myElement = myElements[i];
+        if(myElement != null){
+           myElement.style.display = "none";
+        } 
+     }
 
-    if (document.getElementById("subscribers") != null){
-        document.getElementById("subscribers").style.display = "none";
-    }
-
-    // Remove Subscriber Count under Owner videos
-
-    if (document.getElementById("owner-sub-count") != null){
-        document.getElementById("owner-sub-count").style.display = "none";
-    }
-
-    // Remove Dot between Subscriber number and amount of videos on Home Channel Page
-
-    if (document.getElementById("dot") != null){
-        document.getElementById("dot").style.display = "none";
-    }
-
-    // remove Subscriber Count on YouTube Channel Grid under Channel Page 
-
-    if (document.getElementById("thumbnail-attribution") != null){
-        let items = document.querySelectorAll("#thumbnail-attribution");
-
-        items.forEach(element => element.style.display = "none");
-    }
+    // Fix Style Problems
 
     if (document.getElementsByClassName("subscribe") != null){
         let items = document.querySelectorAll("#subscribe.ytd-grid-channel-renderer");
 
         items.forEach(element => element.style.marginTop = "6px");
     }
+    
 
 
 }, 100);
