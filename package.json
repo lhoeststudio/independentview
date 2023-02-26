@@ -22,8 +22,5 @@
     "jest-circus": "^29.4.3",
     "jest-environment-jsdom": "^29.4.3",
     "jsdom": "^21.1.0"
-  },
-  "jest": {
-    "verbose": true
   }
 }

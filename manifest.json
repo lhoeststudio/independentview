@@ -14,7 +14,7 @@
             "*://www.youtube.com/*",
             "*://m.youtube.com/*"
         ],
-        "js":["scripts/main.js"],
+        "js":["scripts/main/main.js"],
         "run_at": "document_start"
     }
     ]
