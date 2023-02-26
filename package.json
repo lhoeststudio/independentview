@@ -1,0 +1,29 @@
+{
+  "name": "indepedent-view",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/lhoeststudio/ant/indepedent-view.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/lhoeststudio/ant/indepedent-view/issues"
+  },
+  "homepage": "https://gitlab.com/lhoeststudio/ant/indepedent-view#readme",
+  "dependencies": {
+    "jest": "^29.4.3",
+    "jest-circus": "^29.4.3",
+    "jest-environment-jsdom": "^29.4.3",
+    "jsdom": "^21.1.0"
+  },
+  "jest": {
+    "verbose": true
+  }
+}
