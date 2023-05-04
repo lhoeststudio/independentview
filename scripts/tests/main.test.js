@@ -7,5 +7,5 @@ describe("Element Amounts", () => {
 
         expect(myElements).toBe(5);
     })
-
+    
 });
